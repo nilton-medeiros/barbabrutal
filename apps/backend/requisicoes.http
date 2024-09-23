@@ -1,0 +1,26 @@
+GET http://localhost:4000/ping
+
+###
+POST http://localhost:4000/auth/login
+
+###
+POST http://localhost:4000/auth/registrar
+content-type: application/json
+
+{
+  "nome": "Maria Silva",
+  "email": "msilva@empresa.com.br",
+  "senha": "senha123",
+  "telefone": "(11) 99999-7777",
+  "barbeiro": false
+}
+
+###
+PUT http://localhost:4000/auth/registrar
+content-type: application/json
+
+{
+  "nome": "João Silva Sauro",
+  "email": "jsilva@empresa.com.br",
+  "telefone": "(11) 99999-9998",
+}
